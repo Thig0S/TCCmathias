@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TecWiki</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>TecWiki</h1>
+        </div>
+        <nav>
+            <ul>
+                <div class="dividirEssaBosta">
+                    <li><a href="quemSomos.html">Quem somos</a></li>
+                    <li><a href="instituicoes.html">Instituições</a></li>
+                </div>
+                <div class="dividirEssaBosta">
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Área do Carrossel -->
+        <div class="containerImage">
+            <h2 id="carousel-title">Enfermagem</h2>
+            <div class="carousel-wrapper">
+                <img id="carousel-image" src="/img/enfermagem (1).jpg" alt="Enfermagem" />
+            </div>
+            <!-- Bolinhas (dots) para navegação/timer -->
+            <div class="carousel-dots">
+                <div id="dot-left" class="dot" onclick="prevSlide()"></div>
+                <div id="dot-active" class="dot active-dot"></div>
+                <div id="dot-right" class="dot" onclick="nextSlide()"></div>
+            </div>
+        </div>
+
+        <div class="cursos">
+            <h2>Confira os Seguintes Cursos</h2>
+            <hr />
+            <h2>Oferecido Pelas Instituições</h2>
+        </div>
+
+        <div class="cursosOferecidos">
+            <div class="linhaTopo">
+                <h2>Curso</h2>
+                <h3></h3>
+                <h3></h3>
+            </div>
+            <div class="divisaoCurso">
+                <h3>Administração</h3>
+                <h3>Edificações</h3>
+                <h3>Segurança do Trabalho</h3>
+            </div>
+            <div class="divisaoCurso">
+                <h3>Alimentos</h3>
+                <h3>Eletromecânica</h3>
+                <h3>Técnico em Eletrônica</h3>
+            </div>
+            <div class="divisaoCurso">
+                <h3>Biotecnologia</h3>
+                <h3>Enfermagem</h3>
+                <h3>Técnico em Eletrotécnica</h3>
+            </div>
+            <div class="divisaoCurso">
+                <h3>Contabilidade</h3>
+                <h3>Informática</h3>
+                <h3>Técnico em Mecânica</h3>
+            </div>
+            <div class="divisaoCurso">
+                <h3>Desenvolvimento de Sistemas</h3>
+                <h3>Química</h3>
+                <h3>Transações Imobiliárias</h3>
+            </div>
+            <div class="divisaoCurso">
+                <h3></h3>
+                <h3>Saúde Bucal</h3>
+                <h3></h3>
+            </div>
+        </div>
+
+        <!-- Seção de Instituições Parceiras -->
+        <div class="instituicao">
+            <h2>Instituições Parceiras</h2>
+            <!-- A imagem e os nomes serão atualizados automaticamente -->
+            <img id="institution-image" src="/img/colegio (1).jpeg" alt="CEDUP Industrial Lages" />
+            <div class="instituicaoParceiras">
+                <span id="inst-1" class="inst-name active-inst">CEDUP Industrial Lages</span>
+                <span id="inst-2" class="inst-name">CEDUP Renato Ramos da Silva</span>
+                <span id="inst-3" class="inst-name">IFSC (Instituto Federal de Santa Catarina)</span>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Todos os Direitos Reservados para Equipe Cedup || 2025</p>
+    </footer>
+
+    <!-- Inclusão do arquivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+
+</html>
